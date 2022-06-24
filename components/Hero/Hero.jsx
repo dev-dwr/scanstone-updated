@@ -1,10 +1,10 @@
 import React from 'react';
 import Typed from 'react-typed';
 
-const images = ["/image/czarna.jpg", "/image/vanga.jpg", "/image/szaro-ruda.jpg"];
+const images = ["/image/cubes/czarna.jpg", "/image/hero/vanga.jpg", "/image/cubes/szaro-ruda.jpg"];
 
 const delay = 3500;
-const Hero = () => {
+const Hero = ({mainRef}) => {
     const [index, setIndex] = React.useState(0);
     const timeoutRef = React.useRef(null);
   
@@ -28,6 +28,13 @@ const Hero = () => {
       };
     }, [index]);
 
+    const handleScroll = (ref) => {
+      window.scrollTo({
+        top: ref.offsetTop,
+        left: 0,
+        behavior: "smooth",
+      });
+    };
   return (
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto">
@@ -56,8 +63,8 @@ const Hero = () => {
             Dewizą firmy Scanstone jest: wysoka jakość, szybkość realizacji oraz indywidulane podejście do klienta.</p>
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent 
-              text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"> Get started </a>
+              <a href="#" onClick={() => {handleScroll(mainRef.current);}} class="w-full flex items-center justify-center px-8 py-3 border border-transparent 
+              text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">Nasza Oferta</a>
             </div>
           </div>
         </div>

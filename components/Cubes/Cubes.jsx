@@ -19,33 +19,33 @@ const cubes = [
 const cubesItems = [
   {
     jobTitle: "Kostka czerwona Vanga",
-    image: "/image/kostka-czerwona.jpg",
+    image: "/image/cubes/kostka-czerwona.jpg",
   },
   {
     jobTitle: "Kostka czarna Szwed",
-    image: "/image/czarna.jpg",
+    image: "/image/cubes/czarna.jpg",
   },
   {
     jobTitle: "Kostka granitowa Szara",
-    image: "/image/szara.jpg",
+    image: "/image/cubes/szara.jpg",
   },
   {
     jobTitle: "Kostka Szaro-Ruda",
-    image: "/image/szaro-ruda.jpg",
+    image: "/image/cubes/szaro-ruda.jpg",
   },
   {
     jobTitle: "Kostka granitowa Gnejs",
-    image: "/image/gnejs.jpg",
+    image: "/image/cubes/gnejs.jpg",
   },
   {
     jobTitle: "Kostka brązowa Bohus",
-    image: "/image/bohus.jpg",
+    image: "/image/cubes/bohus.jpg",
   }
 ];
 
-  const Cubes = () => {
+  const Cubes = ({mainRef}) => {
     return (
-      <section id="featured-jobs">
+      <section id="featured-jobs" ref={mainRef}>
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-2xl font-bold">Nasze kostki do zaoferowania</h2>
         <Button variant="outline" className="hidden xs:inline-flex">
