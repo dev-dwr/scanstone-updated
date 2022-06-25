@@ -62,11 +62,11 @@ const Hero = ({mainRef}) => {
           <p class="mt-3 text-base text-gray-500  sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
             Dewizą firmy Scanstone jest: wysoka jakość, szybkość realizacji oraz indywidulane podejście do klienta.</p>
           <div class="mt-5 sm:mt-8 sm:flex xs:mb-4 sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow mb-4">
+            <div class="rounded-md shadow mb-4  hover:-translate-y-1 hover:shadow-lg ">
               <a href="#" onClick={() => {handleScroll(mainRef.current);}} class="w-full flex items-center justify-center px-8 py-3 border border-transparent 
               text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">Nasza Oferta</a>
             </div>
-            <div class="rounded-md md:mt-0  md:ml-8 sm:ml-0 sm:mt-4 ">
+            <div class="rounded-md md:mt-0  hover:-translate-y-1  md:ml-8 sm:ml-0 sm:mt-4 ">
               <a href="/contact" class="w-full flex items-center justify-center  px-8 py-3 border border-transparent 
               text-base font-medium rounded-md text-white bg-gradient-to-r from-sky-500 to-indigo-500 hover:bg-indigo-900 md:py-4 md:text-lg md:px-10">Kontakt</a>
             </div>
