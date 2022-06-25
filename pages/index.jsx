@@ -14,15 +14,15 @@ const Home = () => {
       <SEO/>
       <Navbar />
       <Hero  mainRef={mainRef}/>
-      <main className='mx-auto max-w-screen-xl px-6 sm:px-8'>
+      <main className='mx-auto max-w-screen-xl px-6 mb-32 sm:px-8'>
         <div className='mt-16 space-y-20'>
         <Cubes mainRef={mainRef}/>
         <Products/>
         <Testimonials/>
-        <Footer/>
+       
         </div>
       </main>
-     
+      <Footer/>
       </>
   );
 };

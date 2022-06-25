@@ -45,7 +45,7 @@ const cubesItems = [
 
   const Cubes = ({mainRef}) => {
     return (
-      <section id="featured-jobs" ref={mainRef}>
+      <section ref={mainRef}>
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-2xl font-bold">Nasze kostki do zaoferowania</h2>
         <Button variant="outline" className="hidden xs:inline-flex">
