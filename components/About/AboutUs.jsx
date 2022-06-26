@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
@@ -14,7 +15,9 @@ const AboutUs = () => {
        Wieloletnia współpraca z zagranicznymi zakładami wydobycia kamienia sprawia, że możemy naszym Klientom zaoferować konkurencyjne ceny na produkty o najwyższym stopniu jakości. Atrakcyjna oferta pozwala nam na systematyczny rozwój przedsiębiorstwa
         poprzez ciągłe powiększanie grona stałych i zadowolonych odbiorców naszych produktów.</p>
       <div class="flex justify-center">
+        <Link href="/contact">
         <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Skontaktuj się</button>
+        </Link>
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

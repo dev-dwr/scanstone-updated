@@ -5,7 +5,7 @@ import { FreeMode, Mousewheel, Navigation, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Button } from "../Button/Button";
 import { Chip } from "../Chip/Chip";
-import 'swiper/css';
+import "swiper/css";
 
 const cubes = [
   "Kostka czerwona Vanga",
@@ -18,34 +18,40 @@ const cubes = [
 
 const cubesItems = [
   {
-    jobTitle: "Kostka czerwona Vanga",
+    name: "Kostka czerwona Vanga",
     image: "/image/cubes/kostka-czerwona.jpg",
+    link: "/cubes/vanga",
   },
   {
-    jobTitle: "Kostka czarna Szwed",
+    name: "Kostka czarna Szwed",
     image: "/image/cubes/czarna.jpg",
+    link: "/cubes/szwed",
   },
   {
-    jobTitle: "Kostka granitowa Szara",
+    name: "Kostka granitowa Szara",
     image: "/image/cubes/szara.jpg",
+    link: "/cubes/szara",
   },
   {
-    jobTitle: "Kostka Szaro-Ruda",
+    name: "Kostka Szaro-Ruda",
     image: "/image/cubes/szaro-ruda.jpg",
+    link: "/cubes/szaro-ruda",
   },
   {
-    jobTitle: "Kostka granitowa Gnejs",
+    name: "Kostka granitowa Gnejs",
     image: "/image/cubes/gnejs.jpg",
+    link: "/cubes/gnejs",
   },
   {
-    jobTitle: "Kostka brązowa Bohus",
+    name: "Kostka brązowa Bohus",
     image: "/image/cubes/bohus.jpg",
-  }
+    link: "/cubes/bohus",
+  },
 ];
 
-  const Cubes = ({mainRef}) => {
-    return (
-      <section  ref={mainRef}>
+const Cubes = ({ mainRef }) => {
+  return (
+    <section ref={mainRef}>
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-2xl font-bold">Nasze kostki do zaoferowania</h2>
         <Button variant="outline" className="hidden xs:inline-flex">
@@ -63,42 +69,45 @@ const cubesItems = [
           spaceBetween={15}
           className="!py-4"
         >
-          {cubes.map((item, i) => (
+          {cubesItems.map((item, i) => (
             <SwiperSlide key={i} className="!w-auto">
-              <Chip label={item} />
+              <Link href={item.link}>
+                <Chip label={item.name} />
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      {/* !-m-4 to fix box-shadow cropping due to overflow:hidden */}
-      <div id="featured-jobs__items" className="!-m-4">
+      <div className="!-m-4">
         <Swiper
-          className="!p-4 !-m-4" // !p-4 to fix box-shadow cropping due to overflow:hidden
+          className="!p-4 !-m-4"
           modules={[Navigation]}
           navigation
           spaceBetween={10}
           slidesPerView={2}
           breakpoints={{
-            "475": {
+            475: {
               slidesPerView: 2,
             },
-            "640": {
+            640: {
               slidesPerView: 3,
             },
-            "1024": {
+            1024: {
               slidesPerView: 4,
             },
           }}
         >
           {cubesItems.map((item, i) => (
             <SwiperSlide key={i}>
-              <Link href="/#">
-                <a className="group block overflow-hidden rounded-2xl border border-slate-200
-                 bg-white shadow-md transition-all duration-150 hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-700">
+              <Link href={item.link}>
+                <a
+                  className="group block overflow-hidden rounded-2xl border border-slate-200
+                 bg-white shadow-md transition-all duration-150 hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-700"
+                >
                   <div className="relative block overflow-hidden  pt-[70%]">
                     <Image
                       src={item.image}
-                      alt={item.companyName}
+                      alt={item.name}
                       layout="fill"
                       objectFit="cover"
                       className="transition-all duration-200 group-hover:scale-[102%]"
@@ -107,11 +116,8 @@ const cubesItems = [
 
                   <div className="flex flex-col border-t p-4 dark:border-slate-600">
                     <h5 className="block truncate text-xl font-semibold capitalize">
-                      {item.jobTitle}
+                      {item.name}
                     </h5>
-                    <span className="block truncate text-slate-500 dark:text-slate-400">
-                      {item.companyName}
-                    </span>
                   </div>
                 </a>
               </Link>
@@ -120,8 +126,7 @@ const cubesItems = [
         </Swiper>
       </div>
     </section>
-    );
-  };
+  );
+};
 
-
-  export default Cubes;
+export default Cubes;

@@ -29,18 +29,18 @@ const Footer = () => {
         </a>
         <ul class="flex flex-wrap items-center justify-center text-white mb-6 text-sm  sm:mb-0">
           <li>
-            <a href="#" class="mr-4  hover:underline md:mr-6">
+            <a href="/" class="mr-4  hover:underline md:mr-6">
               Home
             </a>
           </li>
           <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6 ">
-              About
+            <a href="/about" class="mr-4 hover:underline md:mr-6 ">
+              O nas
             </a>
           </li>
           <li>
             <a href="/contact" class="hover:underline">
-              Contact
+              Kontakt
             </a>
           </li>
         </ul>
@@ -48,7 +48,7 @@ const Footer = () => {
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <span class="block text-sm text-white sm:text-center dark:text-gray-400">
         © 2022{" "}
-        <a href="https://flowbite.com/" class="hover:underline">
+        <a href="/" class="hover:underline">
           ScanStone
         </a>
         . All Rights Reserved.

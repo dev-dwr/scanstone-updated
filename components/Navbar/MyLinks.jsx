@@ -1,3 +1,4 @@
+
 export const links = [
   {
     name: "Kostka granitowa",
@@ -6,11 +7,12 @@ export const links = [
       {
         Head: "",
         sublink: [
-          { name: "Czarna", link: "/" },
-          { name: "Czerowna Vanga", link: "/" },
-          { name: "Szara", link: "/" },
-          { name: "Szaro-Ruda", link: "/" },
-          { name: "Gnejs", link: "/" },
+          { name: "Czarna", link: "/cubes/szwed" },
+          { name: "Czerowna Vanga", link: "/cubes/vanga" },
+          { name: "Szara", link: "/cubes/szara" },
+          { name: "Szaro-Ruda", link: "/cubes/szaro-ruda" },
+          { name: "Gnejs", link: "/cubes/gnejs" },
+          { name: "Bohus", link: "/cubes/bohus" },
         ],
       },
     ],
