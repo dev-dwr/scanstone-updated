@@ -24,7 +24,7 @@ export const links = [
         {
           Head: "",
           sublink: [
-            { name: "Grys granitowy", link: "/" },
+            { name: "Grys granitowy", link: "/grys/granitowy" },
             { name: "Płyty chodnikowe", link: "/" },
             { name: "kamień murowy Vanga", link: "/" },
             { name: "Parapety granitowe", link: "/" },

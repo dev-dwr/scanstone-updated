@@ -151,7 +151,7 @@ const ContactComp = () => {
                 <div className="mb-6">
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Imie"
                     className="
                      w-full
                      rounded
@@ -168,7 +168,7 @@ const ContactComp = () => {
                 <div className="mb-6">
                   <input
                     type="email"
-                    placeholder="Your Email"
+                    placeholder="Email"
                     className="
                      w-full
                      rounded
@@ -186,7 +186,7 @@ const ContactComp = () => {
                 <div className="mb-6">
                   <textarea
                     rows="6"
-                    placeholder="Your Message"
+                    placeholder="Wiadomosc"
                     className="
                      w-full
                      rounded
@@ -215,7 +215,7 @@ const ContactComp = () => {
                      hover:bg-opacity-90
                      "
                   >
-                    Send Message
+                    Wyslij Wiadomosc
                   </button>
                 </div>
               </form>
