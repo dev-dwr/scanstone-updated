@@ -69,7 +69,7 @@ const NavLinks = () => {
                   >
                     {slinks.sublink.map((slink) => (
                       <li key= {slink.name} className="py-3 pl-14 text-white">
-                        <Link href={slink.link}>{slink.name}</Link>
+                        <a href={slink.link}>{slink.name}</a>
                       </li>
                     ))}
                   </div>
