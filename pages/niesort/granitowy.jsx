@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import ModalImage from "react-modal-image";
 import Link from "next/link";
-const Grys = () => {
+const Niesort = () => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
@@ -13,7 +13,7 @@ const Grys = () => {
           <div class="flex mx-auto flex-wrap mb-20">
             <a
               onClick={(e) => {
-                // e.preventDefault();
+               // e.preventDefault();
                 setOpenTab(1);
               }}
               className={
@@ -22,7 +22,7 @@ const Grys = () => {
                   : "hover:cursor-pointer  sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
               }
             >
-              Grys czarny
+              Niesort czarny
             </a>
             <a
               onClick={(e) => {
@@ -35,7 +35,7 @@ const Grys = () => {
                   : "hover:cursor-pointer  sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
               }
             >
-              Grys czerwony
+              Niesort czerwony
             </a>
             <a
               onClick={(e) => {
@@ -48,24 +48,24 @@ const Grys = () => {
                   : "hover:cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
               }
             >
-              Grys szary
+              Niesort szary
             </a>
           </div>
 
           <div
             className={
-              openTab === 1 ? "flex flex-col text-center w-full" : "hidden"
+              openTab === 1 ? "flex flex-col grow text-center w-full" : "hidden"
             }
-            class="flex flex-column text-center w-full"
           >
             <ModalImage
-              small="/image/grys/szwed.jpeg"
-              large="/image/grys/szwed.jpeg"
-              alt="Grys granitowy czarny"
-              className="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
+              small="/image/niesort/czerwony.jpeg"
+              large="/image/niesort/czerwony.jpeg"
+              alt="niesort czarny"
+              className="xl:w-1/3 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
             />
+            
             <h1 className="text-xl font-medium title-font mb-4 text-gray-900">
-              Grys granitowy czarny
+              Niesort czarny
             </h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
               cos tam o grysie granitowym Whatever cardigan tote bag tumblr
@@ -74,19 +74,11 @@ const Grys = () => {
               deep jianbing selfies heirloom prism food truck ugh squid celiac
               humblebrag.
             </p>
-            <span class="mr-3 text-center text-lg mt-5">Frakcje grysu</span>
-            <select class="rounded border lg:w-1/5 mx-auto leading-relaxed text-base appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
-              <option>0/5 {"mm"}</option>
-              <option>2/9{"mm"}</option>
-              <option>8/16{"mm"}</option>
-              <option>16/22{"mm"}</option>
-              <option>7/9{"mm"}</option>
-            </select>{" "}
-            <a href="/contact">
-              <button class="flex mx-auto  mt-5 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-                Skontaktuj sie
-              </button>
-            </a>
+            <Link href="/contact">
+                  <button class="flex mx-auto  mt-5 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                    Skontaktuj sie
+                  </button>
+              </Link>
           </div>
 
           <div
@@ -95,21 +87,15 @@ const Grys = () => {
             }
             class="flex flex-col text-center w-full"
           >
-            {/* <img
-            class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
-            alt="grys vanga"
-            width="800px"
-            height="600px"
-            src="/image/grys/vanga.jpeg"
-          /> */}
+     
             <ModalImage
-              small="/image/grys/vanga.jpeg"
-              large="/image/grys/vanga.jpeg"
+              small="/image/niesort/czerwony.jpeg"
+              large="/image/niesort/czerwony.jpeg"
               alt="Grys granitowy czerwony"
-              className="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
+              className="xl:w-1/3 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
             />
             <h1 className="text-xl font-medium title-font mb-4 text-gray-900">
-              Grys granitowy czerwony
+              Niesort czerwony
             </h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
               cos tam o grysie granitowym Whatever cardigan tote bag tumblr
@@ -118,19 +104,11 @@ const Grys = () => {
               deep jianbing selfies heirloom prism food truck ugh squid celiac
               humblebrag.
             </p>
-            <span class="mr-3 text-center text-lg mt-5">Frakcje grysu</span>
-            <select class="rounded border lg:w-1/5 mx-auto leading-relaxed text-base appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
-              <option>0/5 {"mm"}</option>
-              <option>2/9{"mm"}</option>
-              <option>8/16{"mm"}</option>
-              <option>16/22{"mm"}</option>
-              <option>7/9{"mm"}</option>
-            </select>
-            <a href="/contact">
-              <button class="flex mx-auto  mt-5 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-                Skontaktuj sie
-              </button>
-            </a>
+            <Link href="/contact">
+                  <button class="flex mx-auto  mt-5 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                    Skontaktuj sie
+                  </button>
+              </Link>
           </div>
 
           <div
@@ -139,15 +117,15 @@ const Grys = () => {
             }
             class="flex flex-col text-center w-full"
           >
-            <ModalImage
-              small="/image/grys/szary.jpg"
-              large="/image/grys/szary.jpg"
-              alt="Grys granitowy szara"
-              className="xl:w-1/5 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
+             <ModalImage
+              small="/image/niesort/szary.jpeg"
+              large="/image/niesort/szary.jpeg"
+              alt="niesort szara"
+              className="xl:w-1/3 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded"
             />
 
             <h1 className="text-xl font-medium title-font mb-4 text-gray-900">
-              Grys granitowy szary
+              Niesort szary
             </h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
               cos tam o grysie granitowym Whatever cardigan tote bag tumblr
@@ -156,19 +134,11 @@ const Grys = () => {
               deep jianbing selfies heirloom prism food truck ugh squid celiac
               humblebrag.
             </p>
-            <span class="mr-3 text-center text-lg mt-5">Frakcje grysu</span>
-            <select class="rounded border lg:w-1/5 mx-auto leading-relaxed text-base appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
-              <option>0/5 {"mm"}</option>
-              <option>2/9{"mm"}</option>
-              <option>8/16{"mm"}</option>
-              <option>16/22{"mm"}</option>
-              <option>7/9{"mm"}</option>
-            </select>
-            <a href="/contact">
-              <button class="flex mx-auto  mt-5 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-                Skontaktuj sie
-              </button>
-            </a>
+            <Link href="/contact">
+                  <button class="flex mx-auto  mt-5 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                    Skontaktuj sie
+                  </button>
+              </Link>
           </div>
         </div>
       </section>
@@ -177,4 +147,6 @@ const Grys = () => {
   );
 };
 
-export default Grys;
+  
+
+export default Niesort;

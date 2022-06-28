@@ -110,7 +110,7 @@ const Cubes = ({ mainRef }) => {
                       alt={item.name}
                       layout="fill"
                       objectFit="cover"
-                      className="transition-all duration-200 group-hover:scale-[102%]"
+                      className="transition-all duration-200 group-hover:scale-[102%] "
                     />
                   </div>
 

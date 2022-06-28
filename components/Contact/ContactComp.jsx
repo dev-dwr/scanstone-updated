@@ -97,14 +97,10 @@ const ContactComp = () => {
                     Number telefonu
                   </h4>
                   <p className="text-base text-body-color">
-                    inż. Sebastian Rymarczyk: <br />
+                    inż. Sebastian Rymarczyk <br />
                     (+48) 603 110 680
                   </p>
-                  <br />
-                  <p className="text-base text-body-color">
-                    inż. Roman Róg: <br />
-                    (+48) 601 567 990
-                  </p>
+                
                 </div>
               </div>
               <div className="flex mb-8 max-w-[370px] w-full">
