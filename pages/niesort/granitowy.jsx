@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import ModalImage from "react-modal-image";
 import Link from "next/link";
 import SimpleImageSlider from "react-simple-image-slider";
 
@@ -60,7 +59,7 @@ const Niesort = () => {
           <SimpleImageSlider
               width={400}
               height={400}
-              images={imageRed}
+              images={imageBlack}
               showBullets={true}
               showNavs={true}
               autoPlay
