@@ -4,11 +4,11 @@ import Footer from "../../components/Footer/Footer";
 import Link from "next/link";
 import SimpleImageSlider from "react-simple-image-slider";
 
-const Niesort = () => {
+const Parapety = () => {
   const [openTab, setOpenTab] = React.useState(1);
   const imageBlack = ["/image/niesort/czerwony.jpeg"];
-  const imageRed = ["/image/niesort/czerwony.jpeg"];
-  const imageGrey = ["/image/niesort/szary.jpeg"];
+  const imageRed = ["/image/parapety/vanga.jpeg"];
+  const imageGrey = ["/image/parapety/szary.jpeg"];
   return (
     <>
       <Navbar />
@@ -26,7 +26,7 @@ const Niesort = () => {
                   : "hover:cursor-pointer  sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
               }
             >
-              Niesort czarny
+              Parapety czarne
             </a>
             <a
               onClick={(e) => {
@@ -39,7 +39,7 @@ const Niesort = () => {
                   : "hover:cursor-pointer  sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
               }
             >
-              Niesort czerwony
+              Parapety czerwone
             </a>
             <a
               onClick={(e) => {
@@ -52,7 +52,7 @@ const Niesort = () => {
                   : "hover:cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
               }
             >
-              Niesort szary
+             Parapety szare
             </a>
           </div>
           <div className = {openTab === 1 ? "lg:w-4/5 mx-auto flex flex-wrap" : "hidden"}>
@@ -67,10 +67,10 @@ const Niesort = () => {
   
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 class="text-sm title-font text-gray-500 tracking-widest">
-                Niesort granitowy 
+              Parapety granitowe
               </h2>
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
-              Niesort granitowy czarny
+              Parapety granitowe czarne
               </h1>
               <div class="flex mb-4">
                 <span class="flex items-center">
@@ -176,10 +176,10 @@ const Niesort = () => {
 
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 class="text-sm title-font text-gray-500 tracking-widest">
-                Niesort granitowy 
+              Parapety granitowe
               </h2>
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
-              Niesort granitowy czerwony
+              Parapety granitowe czerwone
               </h1>
               <div class="flex mb-4">
                 <span class="flex items-center">
@@ -284,10 +284,10 @@ const Niesort = () => {
 
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 class="text-sm title-font text-gray-500 tracking-widest">
-                Niesort granitowy 
+              Parapety granitowe
               </h2>
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
-              Niesort granitowy szary
+              Parapety granitowe szare
               </h1>
               <div class="flex mb-4">
                 <span class="flex items-center">
@@ -388,4 +388,4 @@ const Niesort = () => {
 };
 
 
-export default Niesort;
+export default Parapety;

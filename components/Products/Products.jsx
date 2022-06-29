@@ -16,7 +16,7 @@ const products = [
     {
         productName: "Krawęniki granitowe",
       image: "/image/products/krawezniki.jpg",
-      link: "/grys/granitowy",
+      link: "/curbs/granite",
     },
     {
         productName: "Płyty chodnikowe granitowe",
@@ -26,7 +26,7 @@ const products = [
     {
         productName: "Parapety granitowe",
       image: "/image/products/parapety.jpg",
-      link: "/grys/granitowy",
+      link: "/parapety/granitowe",
 
     },
     {

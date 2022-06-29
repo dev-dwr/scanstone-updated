@@ -21,34 +21,34 @@ const footerNav = {
 
 const Footer = () => {
   return (
-    <footer class="p-4 text-white bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg shadow md:px-6 md:py-8">
-      <div class="sm:flex sm:items-center sm:justify-between">
-        <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
-          <img src="/image/logo.png" class="mr-3 h-120" alt="Flowbite Logo" />
+    <footer className="p-4 text-white bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg shadow md:px-6 md:py-8">
+      <div className="sm:flex sm:items-center sm:justify-between">
+        <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0">
+          <img src="/image/logo.png" className="mr-3 h-120" alt="Flowbite Logo" />
     
         </a>
-        <ul class="flex flex-wrap items-center justify-center text-white mb-6 text-sm  sm:mb-0">
+        <ul className="flex flex-wrap items-center justify-center text-white mb-6 text-sm  sm:mb-0">
           <li>
-            <a href="/" class="mr-4  hover:underline md:mr-6">
+            <a href="/" className="mr-4  hover:underline md:mr-6">
               Home
             </a>
           </li>
           <li>
-            <a href="/about" class="mr-4 hover:underline md:mr-6 ">
+            <a href="/about" className="mr-4 hover:underline md:mr-6 ">
               O nas
             </a>
           </li>
           <li>
-            <a href="/contact" class="hover:underline">
+            <a href="/contact" className="hover:underline">
               Kontakt
             </a>
           </li>
         </ul>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-      <span class="block text-sm text-white sm:text-center dark:text-gray-400">
+      <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <span className="block text-sm text-white sm:text-center dark:text-gray-400">
         © 2022{" "}
-        <a href="/" class="hover:underline">
+        <a href="/" className="hover:underline">
           ScanStone
         </a>
         . All Rights Reserved.
