@@ -10,8 +10,9 @@ const Navbar = () => {
     <nav className="bg-indigo-600">
       <div className="flex items-center font-medium justify-around">
         <div className="z-30 p-5 md:w-auto w-full flex justify-between">
+          <a href="/">
           <Image src="/image/logo.png" alt="logo" width={"190px"} height={"84px"} className="md:cursor-pointer h-9" />
-
+          </a>
           <div className="text-1xl text-white md:hidden" onClick={() => setOpen(!open)}>
             <Hamburger duration={0.8} toggled={open} toggle={setOpen} />
           </div>

@@ -4,10 +4,10 @@ import Footer from "../../components/Footer/Footer";
 import Link from "next/link";
 import SimpleImageSlider from "react-simple-image-slider";
 
-const Parapety = () => {
+const Murowy = () => {
   const [openTab, setOpenTab] = React.useState(2);
-  const imageRed = ["/image/parapety/vanga.jpeg"];
-  const imageGrey = ["/image/parapety/szary.jpeg"];
+  const imageRed = ["/image/murowy/vanga01.jpeg","/image/murowy/murowy02.jpeg","/image/murowy/murowy03.jpeg"];
+  const imageGrey = ["/image/murowy/szary01.jpeg", "/image/murowy/szary02.jpeg"];
   return (
     <>
       <Navbar />
@@ -25,7 +25,7 @@ const Parapety = () => {
                   : "hover:cursor-pointer  sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
               }
             >
-              Parapety czerwone
+             Kamień murowy Vanga
             </a>
             <a
               onClick={(e) => {
@@ -38,7 +38,7 @@ const Parapety = () => {
                   : "hover:cursor-pointer sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider"
               }
             >
-             Parapety szare
+              Kamień murowy szary
             </a>
           </div>
        
@@ -56,10 +56,10 @@ const Parapety = () => {
 
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 class="text-sm title-font text-gray-500 tracking-widest">
-              Parapety granitowe
+              Kamień murowy 
               </h2>
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
-              Parapety granitowe czerwone
+              Kamień murowy czerwony Vanga
               </h1>
               <div class="flex mb-4">
                 <span class="flex items-center">
@@ -128,6 +128,23 @@ const Parapety = () => {
                 tam o tych plytachcos tam o tych plytachcos tam o tych
                 plytachcos tam o tych plytach
               </p>
+              <table class="w-full mt-6 mx-auto text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" class="px-6 py-3">
+                      Rozmiar
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                   
+                    <td class="px-6 py-4">20 x 20 x 40 cm</td>
+                    <td class="px-6 py-4">10 x 20 x 40 cm</td>
+                  </tr>
+               
+                </tbody>
+              </table>
               <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                 <div class="flex ml-6 items-center"></div>
               </div>
@@ -164,10 +181,10 @@ const Parapety = () => {
 
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 class="text-sm title-font text-gray-500 tracking-widest">
-              Parapety granitowe
+              Kamień murowy 
               </h2>
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
-              Parapety granitowe szare
+              Kamień murowy szary
               </h1>
               <div class="flex mb-4">
                 <span class="flex items-center">
@@ -236,6 +253,23 @@ const Parapety = () => {
                 tam o tych plytachcos tam o tych plytachcos tam o tych
                 plytachcos tam o tych plytach
               </p>
+              <table class="w-full mt-6 mx-auto text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" class="px-6 py-3">
+                      Rozmiar
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                   
+                    <td class="px-6 py-4">20 x 20 x 40 cm</td>
+                    <td class="px-6 py-4">10 x 20 x 40 cm</td>
+                  </tr>
+               
+                </tbody>
+              </table>
               <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                 <div class="flex ml-6 items-center"></div>
               </div>
@@ -268,4 +302,4 @@ const Parapety = () => {
 };
 
 
-export default Parapety;
+export default Murowy;

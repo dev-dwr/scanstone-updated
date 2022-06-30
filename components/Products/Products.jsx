@@ -4,14 +4,14 @@ import Link from "next/link";
 
 const products = [
     {
-        productName: "Kamień murowy Vanga",
+        productName: "Kamień murowy",
       image: "/image/products/murowy-vanga.jpg",
-      link: "/grys/granitowy",
+      link: "/murowy/stone",
     },
     {
-        productName: "Kamień murowy Bohus",
-      image: "/image/products/murowy-bohus.jpg",
-      link: "/grys/granitowy",
+        productName: "Oporniki granitowe",
+      image: "/image/opornik/opornik1.jpeg",
+      link: "/opornik/granitowy",
     },
     {
         productName: "Krawęniki granitowe",
@@ -32,7 +32,7 @@ const products = [
     {
         productName: "Schody granitowe",
       image: "/image/products/schody.jpg",
-      link: "/grys/granitowy",
+      link: "/stairs/granite",
 
     },
 

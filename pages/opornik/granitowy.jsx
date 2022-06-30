@@ -1,22 +1,21 @@
-import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Link from "next/link";
 import SimpleImageSlider from "react-simple-image-slider";
 
-const Curbs = () => {
-  const imageBlack = ["/image/curbs/curb1.jpeg", "/image/curbs/curb2.jpeg"];
+const Opornik = () => {
 
+     const images = ["/image/opornik/opornik1.jpeg","/image/opornik/opornik2.jpeg", "/image/opornik/opornik3.jpeg"]
   return (
     <>
       <Navbar />
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font overflow-hidden">
         <div class="container px-5 py-24 mx-auto">
-          <div className="lg:w-4/5 mx-auto flex flex-wrap">
+        <div class="lg:w-4/5 mx-auto flex flex-wrap">
             <SimpleImageSlider
               width={400}
               height={400}
-              images={imageBlack}
+              images={images}
               showBullets={true}
               showNavs={true}
               autoPlay
@@ -24,10 +23,10 @@ const Curbs = () => {
 
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 class="text-sm title-font text-gray-500 tracking-widest">
-                Krawężniki granitowe
+              Opornik granitowy
               </h2>
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
-                Krawężniki granitowe
+              Opornik granitowy
               </h1>
               <div class="flex mb-4">
                 <span class="flex items-center">
@@ -88,16 +87,40 @@ const Curbs = () => {
                   </svg>
                 </span>
               </div>
-              <p class="leading-relaxed">
-                cos tam o tych plytach cos tam o tych plytachcos tam o tych
-                plytachcos tam o tych plytachcos tam o tych plytachcos tam o
-                tych plytachcos tam o tych plytach cos tam o tych plytachcos tam
-                o tych plytachcos tam o tych plytachcos tam o tych plytachcos
-                tam o tych plytachcos tam o tych plytachcos tam o tych
-                plytachcos tam o tych plytach
-              </p>
+              <p class="leading-relaxed">cos tam o tych plytach cos tam o tych plytachcos tam o tych plytachcos tam o tych plytachcos tam o tych plytachcos tam o tych plytachcos tam o tych plytach
+              cos tam o tych plytachcos tam o tych plytachcos tam o tych plytachcos tam o tych plytachcos tam o tych plytachcos tam o tych plytachcos tam o tych plytachcos tam o tych plytach</p>
+              <table class="w-full mt-6 mx-auto text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" class="px-6 py-3">
+                      Rozmiar
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                      40
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                      60
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
+                    >
+                      Wymiar
+                    </th>
+                    <td class="px-6 py-4">40 x 20 x 10 cm</td>
+                    <td class="px-6 py-4">120 x 20 x 10 cm</td>
+                  </tr>
+               
+                </tbody>
+              </table>
               <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-                <div class="flex ml-6 items-center"></div>
+                <div class="flex ml-6 items-center">
+              
+                </div>
               </div>
               <div class="flex">
                 <Link href="/contact">
@@ -120,65 +143,7 @@ const Curbs = () => {
               </div>
             </div>
             <div class="relative mt-12 mx-auto overflow-x-auto shadow-md sm:rounded-lg">
-              <table class="w-full  mx-auto text-sm text-left text-gray-500 dark:text-gray-400">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                  <tr>
-                    <th scope="col" class="px-6 py-3">
-                      Typ krawęnika
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      szerokość
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      główka
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      wysokość
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                      długość
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th
-                      scope="row"
-                      class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
-                    >
-                      A1
-                    </th>
-                    <td class="px-6 py-4">300</td>
-                    <td class="px-6 py-4">270</td>
-                    <td class="px-6 py-4">250</td>
-                    <td class="px-6 py-4">800 - 1500</td>
-                  </tr>
-                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th
-                      scope="row"
-                      class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
-                    >
-                      A2
-                    </th>
-                    <td class="px-6 py-4">180</td>
-                    <td class="px-6 py-4">150</td>
-                    <td class="px-6 py-4">250</td>
-                    <td class="px-6 py-4 text-right">800 - 1500</td>
-                  </tr>
-                  <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th
-                      scope="row"
-                      class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
-                    >
-                      A3
-                    </th>
-                    <td class="px-6 py-4">180</td>
-                    <td class="px-6 py-4">150</td>
-                    <td class="px-6 py-4">300</td>
-                    <td class="px-6 py-4 text-right">800 - 1500</td>
-                  </tr>
-                </tbody>
-              </table>
+      
             </div>
           </div>
         </div>
@@ -188,4 +153,6 @@ const Curbs = () => {
   );
 };
 
-export default Curbs;
+
+
+export default Opornik;

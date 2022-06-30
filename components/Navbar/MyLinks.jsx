@@ -26,12 +26,13 @@ export const links = [
           sublink: [
             { name: "Grys granitowy", link: "/grys/granitowy" },
             { name: "Płyty chodnikowe", link: "/plyty/granitowe" },
-            { name: "kamień murowy Vanga", link: "/" },
+            { name: "Kamień murowy", link: "/murowy/stone" },
             { name: "Parapety granitowe", link: "/parapety/granitowe" },
-            { name: "Oporniki Granitowe", link: "/" },
+            { name: "Oporniki Granitowe", link: "/opornik/granitowy" },
             { name: "Krawężniki granitowe", link: "/curbs/granite" },
             { name: "Niesort granitowy", link: "/niesort/granitowy" },
             { name: "Bloki bryły granitowe", link: "/bloki/granitowe" },
+            { name: "Schody", link: "/stairs/granite" },
           ],
         },
        
